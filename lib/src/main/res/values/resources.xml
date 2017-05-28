@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Centered Toolbar</string>
+
+    <declare-styleable name="CenteredToolbar">
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="titleTypeface" format="string" />
+        <attr name="subtitleTextSize" format="dimension" />
+        <attr name="subtitleTypeface" format="string" />
+    </declare-styleable>
+</resources>
