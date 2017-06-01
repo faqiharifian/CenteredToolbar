@@ -33,7 +33,7 @@ dependencies {
 publish {
     groupId = 'com.arifian.view'
     artifactId = 'centeredtoolbar'
-    publishVersion = '1.0.1'
+    publishVersion = '1.0.4'
     desc = 'Your toolbar\'s title and subtitle will automatically be centered just normally call setTitle and setSubtitle'
     licences = ['Apache-2.0']
     uploadName='CenteredToolbar'

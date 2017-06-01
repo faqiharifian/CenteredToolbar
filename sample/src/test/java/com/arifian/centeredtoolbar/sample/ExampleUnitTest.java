@@ -1,4 +1,4 @@
-package com.arifian.centeredtoolbar.lib;
+package com.arifian.centeredtoolbar.sample;
 
 import org.junit.Test;
 

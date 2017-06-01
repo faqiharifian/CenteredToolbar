@@ -1,13 +1,15 @@
-package com.arifian.centeredtoolbar;
+package com.arifian.centeredtoolbar.sample;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+
+import com.arifian.centeredtoolbar.R;
+import com.arifian.centeredtoolbar.CenteredToolbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,8 +17,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        CenteredToolbar toolbar = (CenteredToolbar) findViewById(R.id.toolbar);
+//        toolbar.setTitleTextColor(Color.BLACK);
+// SpannableStringBuilder sBuilder = new SpannableStringBuilder();
+//        sBuilder.append("Hello!") // Bold this
+//                .append("I use Calligraphy"); // Default TextView font.
+//        CalligraphyTypefaceSpan typefaceSpan = new CalligraphyTypefaceSpan(TypefaceUtils.load(getAssets(), "fonts/Oswald-Stencbab.ttf"));
+
+//        sBuilder.setSpan(typefaceSpan, 0, 6, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+//        toolbar.getTitleTextView().setText(sBuilder, TextView.BufferType.SPANNABLE);
+
         setSupportActionBar(toolbar);
+//        CalligraphyConfig.initDefault("fonts/your-font.ttf");
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -26,6 +38,17 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+//        getSupportActionBar().setTitle(sBuilder);
+        getSupportActionBar().setTitle("nfrej i");
+        getSupportActionBar().setSubtitle("fejiwf");
+
+
+//        toolbar.setTitleTextSize(getResources().getDimensionPixelSize(R.dimen.text));
+//        toolbar.getTitleTextView().setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimensionPixelSize(R.dimen.text));
+//        toolbar.setTitleTypeface("fonts/Oswald-Stencbab.ttf");
+
+//        toolbar.setTitleTextAppearance(this, R.style.textAppearance);
+//        ((TextView) findViewById(R.id.text)).setTextSize(TypedValue.COMPLEX_UNIT_PX, getResources().getDimensionPixelSize(R.dimen.text));
     }
 
     @Override

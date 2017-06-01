@@ -1,4 +1,4 @@
-package com.arifian.centeredtoolbar;
+package com.arifian.centeredtoolbar.sample;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
