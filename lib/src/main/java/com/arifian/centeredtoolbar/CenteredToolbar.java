@@ -65,10 +65,10 @@ public class CenteredToolbar extends Toolbar {
 
     @Override
     public void setTitle(final CharSequence title) {
+        super.setTitle(title);
         titleTextView.post(new Runnable() {
             @Override
             public void run() {
-                CenteredToolbar.super.setTitle(title);
                 centerizeTextView(titleTextView);
             }
         });
@@ -76,10 +76,10 @@ public class CenteredToolbar extends Toolbar {
 
     @Override
     public void setSubtitle(final CharSequence title) {
+        super.setSubtitle(title);
         subtitleTextView.post(new Runnable() {
             @Override
             public void run() {
-                CenteredToolbar.super.setSubtitle(title);
                 centerizeTextView(subtitleTextView);
             }
         });
